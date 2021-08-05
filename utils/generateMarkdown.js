@@ -1,9 +1,9 @@
 function generateMarkDown (info) {
     const markdown = `
-    amazing markdown 🌎
-    #${info["project-repo"]}
+amazing markdown 🌎
+#${info["repoName"]}
 
-    `;
+`;
     
     return markdown;
 }

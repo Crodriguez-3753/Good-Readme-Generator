@@ -1,6 +1,8 @@
 const inquirer = require("inquirer");
 const questions = require("./utils/questions");
 const generateMarkdown = require("./utils/generateMarkdown");
+const saveMarkDown = require("./utils/saveMarkDown");
+
 
 function main() {
     // ask questions
@@ -9,6 +11,6 @@ function main() {
         // generate markdown from answers
         .then(generateMarkdown)
     // save file
-        .then(console.log)
+        .then(saveMarkDown)
 }
 main();

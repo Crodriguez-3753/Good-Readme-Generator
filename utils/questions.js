@@ -1,6 +1,6 @@
 const questions = [
     {
-        name: "repo-name",
+        name: "repoName",
         message: "what is your repo name?",
     },
 ];
