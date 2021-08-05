@@ -1,11 +1,15 @@
 const fs = require('fs/promises')
 
 const saveMarkDown = (str) => {
-    fs.writeFile(Date.now() + '_markDown.md', str)
-    .then(function(){
-        console.log ('File saved')
+    const fileName = "markDown_" + Date.now() + ".md";
+    
+    return new Promise(function(resolve, reject){
+        fs.writeFile(fileName, str)
+        .then(function() {
+           resolve(fileName);
+        })
+        .catch(console.log)
     })
-    .catch(console.log)
 };
  
 module.exports = saveMarkDown;

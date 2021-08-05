@@ -2,15 +2,15 @@ const inquirer = require("inquirer");
 const questions = require("./utils/questions");
 const generateMarkdown = require("./utils/generateMarkdown");
 const saveMarkDown = require("./utils/saveMarkDown");
+const open = require('open');
 
-
-function main() {
+async function main() {
     // ask questions
-    inquirer
-    .prompt(questions)
+    const answers = await inquirer.prompt(questions);
         // generate markdown from answers
-        .then(generateMarkdown)
+        const markDown = generateMarkdown(answers);
     // save file
-        .then(saveMarkDown)
+    const fileName = await saveMarkDown(markDown);
+    open(fileName)
 }
 main();
