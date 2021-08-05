@@ -37,7 +37,7 @@ function generateMarkdown (info) {
     ${info.livelink}
 
     ## Description
-    ${info.Description}
+    ${info.description}
 
     ## Table of Contents
     *[Installation](#installation)
@@ -55,8 +55,8 @@ function generateMarkdown (info) {
     ## Installation
     To install the dependencies, run the following command(s): ${info.installation}
 
-    ## Usage
-    ${info.usage}
+    ## Useage
+    ${info.useage}
 
 ${renderLicenseSection(info.license)}
 
