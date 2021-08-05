@@ -11,7 +11,7 @@ A command line interface which takes the users inputted answers from the prompte
 ## Table of Contents
 *[Installation](#installation)
 
-*[Useage](#usage)
+*[Useage](#useage)
 
     
 *[License](#license) 
