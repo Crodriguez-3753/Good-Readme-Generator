@@ -42,7 +42,7 @@ function generateMarkdown (info) {
     ## Table of Contents
     *[Installation](#installation)
 
-    *[Usage](#usage)
+    *[Useage](#usage)
 
     ${renderLicenseLink(info.license)}
 
